@@ -15,7 +15,7 @@ export class TodoDetailsComponent {
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private todoService: TodosService) {
     this.activatedRoute.params.subscribe(value => {
         // Check existence .extras.state from previous component
-        this.router.getCurrentNavigation()?.extras.state
+        this.router.getCurrentNavigation()?.extras.state                                     // TODO state OR fetch
           ? this.todo = this.router.getCurrentNavigation()?.extras.state as ITodo
           : this.todoService.getTodoById(value.id).subscribe(value => this.todo = value)
       }
