@@ -13,7 +13,7 @@ export class GeneratorService {
         const index = Math.floor(Math.random() * alphabet.length);
         randomString += alphabet[index];
       }
-      observer.next(randomString);;
+      observer.next(randomString);
     }, 3000)
   });
 }
