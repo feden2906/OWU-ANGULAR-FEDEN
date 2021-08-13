@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/OWU-ANGULAR-FEDEN'),
+      dir: require('path').join(__dirname, './coverage/feden-Angular-Forms'),
       subdir: '.',
       reporters: [
         { type: 'html' },
